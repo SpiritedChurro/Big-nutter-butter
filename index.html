@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="indexstyle.css"/>
+    <meta charset="utf-8">
+    <title>Web Portfolio: Raylor Liu</title>
+</head>
+<body>
+    <i>The Raylorian Experience</i>
+	<p id="demo"></p>
+	<script>
+	var d = new Date();
+	document.getElementById("demo").innerHTML = d;
+	</script>
+	<h1>Raylor's CSP Adventures</h1>
+	<h2>Hosted by Lawrence Millard</h2>
+		<p1>I am on a quest to master fundamentals and origins behind the internet and its physical associate, the computer. From the basic binary and logic to programming languages, CSP offers an opportunity to understand the mechanics of this common technology.</p1>	
+	<h3>Chapters</h3>
+		<p2>
+			<br>Unit 1 (Complete)</br>
+			<br>Unit 2 (Complete)</br>
+			<br>Unit 3 (In Progress)</br>
+			<br>Unit 4 (Incomplete)</br>
+			<br>Unit 5 (Incomplete)</br>
+			<br>Unit 6 (Incomplete)</br>
+			<br>Unit 7 (Incomplete)</br>
+		</p2>
+	<h4>Contact Information:</h4>
+		<p3>hit me up at raylorliu619@gmail.com</p3>	 
+<script>
+	var imgIndex = 0;
+	var backgroundImages = ['url(https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2018/astronomersw.jpg)',
+	'url(https://ae01.alicdn.com/kf/HTB1BT4XOVXXXXc9XVXXq6xXFXXXZ/Skala-szaro-ci-szklane-szachy-szachy-sztuk-szk-a-sztuki-tkaniny-jedwabiu-sztuki-plakatu-na-cianie.jpg_640x640.jpg)', 
+	'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaGwPxd4kLeQPCdaFbIKuU6NNEIJ0LAm5UTkleHPTFfDs_u_la4g)', 
+	'url(https://i.ytimg.com/vi/eYo-avC1pqY/hqdefault.jpg)'];
+	
+	var alignStyles = ["center", "left","right"];
+	var alignIndex = 0;
+function myFunction() {
+if (imgIndex + 1 > 3)
+	imgIndex = 0;
+else
+	imgIndex = imgIndex + 1;
+	document.body.style.backgroundImage = backgroundImages[imgIndex];
+}
+</script>
+<script>
+function changedivposition() {
+if (alignIndex + 1 > 2)
+	alignIndex = 0;
+else
+	alignIndex = alignIndex + 1;
+	document.getElementById("posdiv").style.textAlign=alignStyles[alignIndex];
+}
+function imageclicker() {
+document.getElementById("imgdiv").innerHTML = "<p>Have some ice cream Mr. Millard</p>"
+}
+</script>
+	<button type="button" onclick="myFunction()">Set Background Image</button>	
+	<div id="posdiv" class="divmiddle" onclick="changedivposition();">
+<div>
+<img src="https://csg.tinkercad.com/things/dYt4SnASHAm/t725.png?rev=373&s=7c8851785582f6976a6112626be28ce5&v=0" alt="Pokeball" style="width:20%"> <onclick="changedivposition()"></img>
+<div id="posdiv">
+</div>
+<div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Ice_Cream_dessert_02.jpg/220px-Ice_Cream_dessert_02.jpg" alt="Ice Cream" style="width:20%"> <onclick="imageclicker()"></img>
+<div id="imgdiv">
+</div>
+</body>		
+</html>
+
+
+

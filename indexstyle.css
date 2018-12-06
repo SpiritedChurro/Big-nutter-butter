@@ -1,0 +1,23 @@
+body {
+	color: yellow;
+}
+
+
+body {
+   background-image: url("https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2018/astronomersw.jpg");
+}
+
+h1 {
+	text-align: center
+}
+
+h2 {
+	text-align: center;
+	font-family: Comic Sans MS;
+	font-size: 10px;
+}
+
+.divmiddle {
+margin: 0 auto;
+text-align: center
+}
